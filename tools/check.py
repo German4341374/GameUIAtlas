@@ -2,6 +2,7 @@
 from pathlib import Path
 import re
 import struct
+import base64
 from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -12,6 +13,13 @@ for folder in studies:
     for sub in ("art", "icons"):
         assert len(list((folder / sub).glob("*.svg"))) == 4, (folder, sub)
     assert (folder / "detail.svg").is_file()
+    sheet = ElementTree.parse(folder / "detail.svg").getroot()
+    embedded = sheet.find("{http://www.w3.org/2000/svg}image")
+    href = embedded.attrib["{http://www.w3.org/1999/xlink}href"]
+    assert href.startswith("data:image/png;base64,")
+    assert base64.b64decode(href.split(",", 1)[1], validate=True) == (folder / "model/studio.png").read_bytes()
+    snapshot = (folder / "model/inspection.png").read_bytes()
+    assert snapshot.startswith(b"\x89PNG") and struct.unpack(">II", snapshot[16:24]) == (1280, 760)
     for path in folder.rglob("*.svg"):
         xml = ElementTree.parse(path).getroot()
         assert xml.tag == "{http://www.w3.org/2000/svg}svg" and xml.get("viewBox"), path
@@ -27,4 +35,4 @@ for doc in ROOT.rglob("README.md"):
     for target in re.findall(r"\]\(([^)]+)\)", doc.read_text(encoding="utf-8")):
         if not target.startswith(("https://", "#")):
             assert (doc.parent / target).exists(), (doc, target)
-print("OK: 4 boards, 16 Figma frame links, 36 SVG files, 4 PNG previews and all relative README links.")
+print("OK: 4 boards, 16 Figma frame links, 36 SVG layouts/art assets, 4 inspection screens with embedded studio renders and all relative README links.")

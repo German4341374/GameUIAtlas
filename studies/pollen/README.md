@@ -2,6 +2,16 @@
 
 Птичка Пип собирает груши. Чтобы добраться до рощи, ей нужно обойти закрытый мост, приготовить джем и забрать ленточку на рынке.
 
+### A press for sunpears · предметный экран
+
+![A press for sunpears](model/inspection.png)
+
+В книге рецептов показан пресс целиком. Ребёнку не нужно знать устройство винта: подпись подсказывает, что положить в корзину и куда подставить чашку.
+
+[Скачать модель GLB](model/prop.glb) · [Рендер без интерфейса](model/studio.png) · [Макет SVG для импорта в Figma](detail.svg)
+
+В облачной Figma ниже оставлены четыре исходных векторных экрана.
+
 [Открыть серию в Figma](https://www.figma.com/design/PcRRfGqam04HT5VkCCzrUK/Game-UI-Atlas?node-id=2-1057) · [Увеличить превью](overview.png)
 
 ![Короткий день в саду — четыре игровых окна](overview.png)
@@ -17,12 +27,5 @@
 | [Jam for two](https://www.figma.com/design/PcRRfGqam04HT5VkCCzrUK/Game-UI-Atlas?node-id=2-1155) | Sunpears: 3 of 3 · Honey drops: 2 of 2 |
 | [Market ribbon](https://www.figma.com/design/PcRRfGqam04HT5VkCCzrUK/Game-UI-Atlas?node-id=2-1207) | Jam delivered: 1 jar · Ribbon: Unclaimed |
 
-### Пятый экран: Harvest stamps
-
-![Harvest stamps](detail.svg)
-
-Этот дополнительный экран приложен как [редактируемый SVG](detail.svg), а не как часть облачного макета. Скачайте файл и перетащите его на холст Figma. Векторные рисунки лежат в [art/](art/), отдельные иконки — в [icons/](icons/). При импорте SVG системный шрифт может отличаться.
-
-В исходном макете: Nunito. Цвета: `#FFF1D1` · `#FFFCED` · `#233F37` · `#F8B059` · `#DCEBBD`.
 
 [← Все серии](../../README.md)

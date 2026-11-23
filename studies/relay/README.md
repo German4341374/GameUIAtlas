@@ -2,6 +2,16 @@
 
 Геодезическая группа восстанавливает связь после шторма. В комплекте две катушки, а за хребтом пропал один ретранслятор.
 
+### Channel recovery · предметный экран
+
+![Channel recovery](model/inspection.png)
+
+У прибора есть механическая шкала, переключатели и выдвижная антенна. Справа отдельно вынесено состояние связи: можно ли перейти на резервный канал, сохранив накопленные пакеты.
+
+[Скачать модель GLB](model/prop.glb) · [Рендер без интерфейса](model/studio.png) · [Макет SVG для импорта в Figma](detail.svg)
+
+В облачной Figma ниже оставлены четыре исходных векторных экрана.
+
 [Открыть серию в Figma](https://www.figma.com/design/PcRRfGqam04HT5VkCCzrUK/Game-UI-Atlas?node-id=2-542) · [Увеличить превью](overview.png)
 
 ![Снаряжение полевой группы — четыре игровых окна](overview.png)
@@ -17,12 +27,5 @@
 | [Relay coverage](https://www.figma.com/design/PcRRfGqam04HT5VkCCzrUK/Game-UI-Atlas?node-id=2-795) | Tower 07: Online · Ridge repeater: Offline |
 | [Return channel](https://www.figma.com/design/PcRRfGqam04HT5VkCCzrUK/Game-UI-Atlas?node-id=2-916) | Cached packets: 18 / 18 · Backup uplink: Available |
 
-### Пятый экран: Field locker
-
-![Field locker](detail.svg)
-
-Этот дополнительный экран приложен как [редактируемый SVG](detail.svg), а не как часть облачного макета. Скачайте файл и перетащите его на холст Figma. Векторные рисунки лежат в [art/](art/), отдельные иконки — в [icons/](icons/). При импорте SVG системный шрифт может отличаться.
-
-В исходном макете: Barlow Condensed и Space Mono. Цвета: `#111F20` · `#233335` · `#EDF2DC` · `#FFC269` · `#344941`.
 
 [← Все серии](../../README.md)

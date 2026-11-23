@@ -2,6 +2,16 @@
 
 Курьер принимает заказ, меняет резину, едет через порт и сверяется с целевым временем уже после финиша.
 
+### Parcel Runner 17 · предметный экран
+
+![Parcel Runner 17](model/inspection.png)
+
+Перед выездом курьер проверяет два ремня на ящике и шины. Номер на кузове и маркировка на грузе остаются видны даже без подписей интерфейса.
+
+[Скачать модель GLB](model/prop.glb) · [Рендер без интерфейса](model/studio.png) · [Макет SVG для импорта в Figma](detail.svg)
+
+В облачной Figma ниже оставлены четыре исходных векторных экрана.
+
 [Открыть серию в Figma](https://www.figma.com/design/PcRRfGqam04HT5VkCCzrUK/Game-UI-Atlas?node-id=2-1273) · [Увеличить превью](overview.png)
 
 ![Ночная курьерская гонка — четыре игровых окна](overview.png)
@@ -17,12 +27,5 @@
 | [HARBOR LOOP](https://www.figma.com/design/PcRRfGqam04HT5VkCCzrUK/Game-UI-Atlas?node-id=2-1416) | Checkpoint: 02 / 03 · Time to beat: 00:29.4 |
 | [SIGNED FOR](https://www.figma.com/design/PcRRfGqam04HT5VkCCzrUK/Game-UI-Atlas?node-id=2-1480) | Finish time: 01:29.4 · Personal best: −2.6 s |
 
-### Пятый экран: Tuning bench
-
-![Tuning bench](detail.svg)
-
-Этот дополнительный экран приложен как [редактируемый SVG](detail.svg), а не как часть облачного макета. Скачайте файл и перетащите его на холст Figma. Векторные рисунки лежат в [art/](art/), отдельные иконки — в [icons/](icons/). При импорте SVG системный шрифт может отличаться.
-
-В исходном макете: Barlow Condensed и DM Sans. Цвета: `#201A43` · `#332957` · `#F9F5FF` · `#BAF574` · `#46376C`.
 
 [← Все серии](../../README.md)
